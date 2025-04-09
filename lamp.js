@@ -13,4 +13,14 @@ let isOnLamp = false;
 console.log(lampEl);
 console.log(buttonLampEl);
 
-buttonLampEl.addEventListener("click", function () {});
+buttonLampEl.addEventListener("click", function () {
+  isOnLamp = !isOnLamp;
+
+  if (isOnLamp) {
+    buttonLampEl.innerText = "Spegni";
+    lampEl.src = "./img/yellow_lamp.png";
+  } else {
+    buttonLampEl.innerText = "Accendi";
+    lampEl.src = "./img/white_lamp.png";
+  }
+});
