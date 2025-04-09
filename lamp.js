@@ -23,4 +23,8 @@ buttonLampEl.addEventListener("click", function () {
     buttonLampEl.innerText = "Accendi";
     lampEl.src = "./img/white_lamp.png";
   }
+
+  //*  Alternativa con operatore ternario
+  //   buttonLampEl.innerText = isOnLamp ? "Spegni" : "Accendi";
+  //   lampEl.src = isOnLamp ? "./img/yellow_lamp.png" : "./img/white_lamp.png";
 });
